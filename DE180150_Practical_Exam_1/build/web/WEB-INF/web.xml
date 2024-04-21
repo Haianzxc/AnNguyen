@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    
+    <filter-mapping>
+        <filter-name>FilterCounter</filter-name>
+        <servlet-name>viewAllCourseServlet</servlet-name>
+        <dispatcher>REQUEST</dispatcher>
+        <dispatcher>FORWARD</dispatcher>
+        <dispatcher>INCLUDE</dispatcher>
+        <dispatcher>ERROR</dispatcher>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>FilterCounter</filter-name>
+        <servlet-name>addNewCourseServlet</servlet-name>
+        <dispatcher>REQUEST</dispatcher>
+        <dispatcher>FORWARD</dispatcher>
+        <dispatcher>INCLUDE</dispatcher>
+        <dispatcher>ERROR</dispatcher>
+    </filter-mapping>
+    <servlet>
+        <servlet-name>addNewCourseServlet</servlet-name>
+        <servlet-class>controller.addNewCourseServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>viewAllCourseServlet</servlet-name>
+        <servlet-class>controller.viewAllCourseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addNewCourseServlet</servlet-name>
+        <url-pattern>/addNewCourseServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>viewAllCourseServlet</servlet-name>
+        <url-pattern>/viewAllCourseServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <error-page>
+        <exception-type>java.lang.Exeption</exception-type>
+        <location>/err.jsp</location>
+    </error-page>
+</web-app>

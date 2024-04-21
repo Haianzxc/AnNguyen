@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/StudentManager"/>
+<Resource name="jdbc/mydb" auth="Container"
+              type="javax.sql.DataSource" 
+              driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+              url="jdbc:sqlserver://localhost:1433;databaseName=Schools;intergratedSecurity=false;encrypt=false;trustServerCertificate=true;"
+              username="AnNguyen" password="abcd"/>
+</Context>

@@ -7,14 +7,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="Style/vendor.css">
-        <link rel="stylesheet" href="Style/style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Giao hàng tiện lợi</title>
-        
-    </head>
     <section id="footer">
     <div class="container footer-container py-5">
       <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5  ">
@@ -99,4 +91,5 @@
             </div>
         </footer>
     </section>
+    </body>
 </html>
